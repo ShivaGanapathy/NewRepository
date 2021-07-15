@@ -46,7 +46,7 @@ random_number = 0
 info  = False
 
 #loading images
-PaperImg = pygame.image.load('mixed_paper.gif')
+PaperImg = pygame.image.load('assets/mixed_paper.gif')
 StemImg = pygame.image.load('stem.png')
 GreenArrowImg = pygame.image.load("Green_Arrows.png")
 DarkGreenArrowImg = pygame.image.load("Dark_Green_Arrows.png")
