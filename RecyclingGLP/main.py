@@ -46,48 +46,48 @@ random_number = 0
 info  = False
 
 #loading images
-PaperImg = pygame.image.load('assets/img/mixed_paper.gif')
-StemImg = pygame.image.load('assets/img/stem.png')
-GreenArrowImg = pygame.image.load("assets/img/Green_Arrows.png")
-DarkGreenArrowImg = pygame.image.load("assets/img/Dark_Green_Arrows.png")
-ProductsImg = pygame.image.load("assets/img/products2.PNG")
-ConveyorImg = pygame.image.load("assets/img/Conveyor.png")
-ConveyorImg2 = pygame.image.load("assets/img/Conveyor2.png")
-Strands = pygame.image.load("assets/img/Strands.png")
-FilterImg = pygame.image.load("assets/img/Filter.PNG")
-FilterBlockImg = pygame.image.load("assets/img/FilterBlock.PNG")
-IconImg = pygame.image.load("assets/img/icon.png")
-FlamesImg = pygame.image.load("assets/img/flames.PNG")
-ShreddingImg = pygame.image.load("assets/img/Shredding.PNG")
-RotateImg1 = pygame.image.load("assets/img/Rotat1.PNG")
-RotateImg2 = pygame.image.load("assets/img/Rotat2.PNG")
-RotateImg3 = pygame.image.load("assets/img/Rotat3.PNG")
-RotateImg4 = pygame.image.load("assets/img/Rotat4.PNG")
-DeinkImg1 = pygame.image.load("assets/img/Deink1.PNG")
-DeinkImg2 = pygame.image.load("assets/img/Deink2.PNG")
-DeinkImg3 = pygame.image.load("assets/img/Deink3.PNG")
-DeinkImg4 = pygame.image.load("assets/img/Deink4.PNG")
-LineImg = pygame.image.load("assets/img/line.PNG")
-PulpImg= pygame.image.load("assets/img/pulp.PNG")
-VatImg = pygame.image.load("assets/img/Vat.PNG")
-WaterFilterImg = pygame.image.load("assets/img/waterfilter.PNG")
-BleachedPulpImg = pygame.image.load("assets/img/bleachedpulp.PNG")
-BleachBlockImg = pygame.image.load("assets/img/bleachblock.PNG")
-Spray1Img= pygame.image.load("assets/img/Spray1.PNG")
-Spray2Img= pygame.image.load("assets/img/Spray2.PNG")
-Spray3Img= pygame.image.load("assets/img/Spray3PNG.PNG")
-Spray4Img= pygame.image.load("assets/img/Spray4.PNG")
-Spray5Img= pygame.image.load("assets/img/Spray5.PNG")
-Spray6Img= pygame.image.load("assets/img/Spray6.PNG")
-Spray7Img= pygame.image.load("assets/img/Spray7.PNG")
-Spray8Img= pygame.image.load("assets/img/Spray8.PNG")
-Spray9Img= pygame.image.load("assets/img/Spray9.PNG")
-Spray10Img = pygame.image.load("assets/img/Spray10.PNG")
-Roller1Img = pygame.image.load("assets/img/Roller1.PNG")
-Roller2Img = pygame.image.load("assets/img/Roller2.PNG")
-FinalPaperImg = pygame.image.load("assets/img/FinalPaper.jpg")
+paper_img = pygame.image.load('assets/img/mixed_paper.gif')
+stem_img = pygame.image.load('assets/img/stem.png')
+green_arrow_img = pygame.image.load("assets/img/Green_Arrows.png")
+dark_green_arrow_img = pygame.image.load("assets/img/Dark_Green_Arrows.png")
+products_img = pygame.image.load("assets/img/products2.PNG")
+conveyor_img = pygame.image.load("assets/img/Conveyor.png")
+conveyor_img_2 = pygame.image.load("assets/img/Conveyor2.png")
+strands_img = pygame.image.load("assets/img/Strands.png")
+filter_img = pygame.image.load("assets/img/Filter.PNG")
+filter_block_img = pygame.image.load("assets/img/FilterBlock.PNG")
+icon_img = pygame.image.load("assets/img/icon.png")
+flames_img = pygame.image.load("assets/img/flames.PNG")
+shredding_img = pygame.image.load("assets/img/Shredding.PNG")
+rotate_img_1 = pygame.image.load("assets/img/Rotat1.PNG")
+rotate_img_2 = pygame.image.load("assets/img/Rotat2.PNG")
+rotate_img_3 = pygame.image.load("assets/img/Rotat3.PNG")
+rotate_img_4 = pygame.image.load("assets/img/Rotat4.PNG")
+deink_img_1 = pygame.image.load("assets/img/Deink1.PNG")
+deink_img_2 = pygame.image.load("assets/img/Deink2.PNG")
+deink_img_3 = pygame.image.load("assets/img/Deink3.PNG")
+deink_img_4 = pygame.image.load("assets/img/Deink4.PNG")
+line_img = pygame.image.load("assets/img/line.PNG")
+pulp_img= pygame.image.load("assets/img/pulp.PNG")
+vat_img = pygame.image.load("assets/img/Vat.PNG")
+water_filter_img = pygame.image.load("assets/img/waterfilter.PNG")
+bleached_pulp_img = pygame.image.load("assets/img/bleachedpulp.PNG")
+bleach_block_img = pygame.image.load("assets/img/bleachblock.PNG")
+spray_img_1= pygame.image.load("assets/img/Spray1.PNG")
+spray_img_2= pygame.image.load("assets/img/Spray2.PNG")
+spray_img_3= pygame.image.load("assets/img/Spray3PNG.PNG")
+spray_img_4= pygame.image.load("assets/img/Spray4.PNG")
+spray_img_5= pygame.image.load("assets/img/Spray5.PNG")
+spray_img_6= pygame.image.load("assets/img/Spray6.PNG")
+spray_img_7= pygame.image.load("assets/img/Spray7.PNG")
+spray_img_8= pygame.image.load("assets/img/Spray8.PNG")
+spray_img_9= pygame.image.load("assets/img/Spray9.PNG")
+spray_img_10 = pygame.image.load("assets/img/Spray10.PNG")
+roller_img_1 = pygame.image.load("assets/img/Roller1.PNG")
+roller_img_2 = pygame.image.load("assets/img/Roller2.PNG")
+final_paper_img = pygame.image.load("assets/img/FinalPaper.jpg")
 
-pygame.display.set_icon(IconImg)
+pygame.display.set_icon(icon_img)
 
 #class for conveyor objects
 class GameItems:
@@ -143,94 +143,94 @@ all functions
 
 #functions that each display different images
 def paper(x, y):
-    Display.blit(PaperImg, (x, y) )
+    Display.blit(paper_img, (x, y) )
 def stem(x, y):
-    Display.blit(StemImg, (x, y))
+    Display.blit(stem_img, (x, y))
 def arrow(x,y):
-    Display.blit(GreenArrowImg,(x,y))
+    Display.blit(green_arrow_img,(x,y))
 def arrow2(x,y):
-    Display.blit(DarkGreenArrowImg,(x,y))
+    Display.blit(dark_green_arrow_img,(x,y))
 def products(x,y):
-    Display.blit(ProductsImg,(x,y)) 
+    Display.blit(products_img,(x,y)) 
 def conveyor(x,y):
-    Display.blit(ConveyorImg,(x,y))
+    Display.blit(conveyor_img,(x,y))
 def conveyor2(x,y):
-    Display.blit(ConveyorImg2,(x,y))
-def shREDder(x,y):
-    Display.blit(ShreddingImg,(x,y))
-def strands(x,y):
-    Display.blit(Strands,(x,y))
+    Display.blit(conveyor_img_2,(x,y))
+def shredder(x,y):
+    Display.blit(shredding_img,(x,y))
+def Strands(x,y):
+    Display.blit(strands_img,(x,y))
 def flames(x,y):
-    Display.blit(FlamesImg,(x,y))
+    Display.blit(flames_img,(x,y))
 def Filter(x,y):
-    Display.blit(FilterImg,(x,y))
+    Display.blit(filter_img,(x,y))
 def FilterBlock(x,y):
-    Display.blit(FilterBlockImg,(x,y))
+    Display.blit(filter_block_img,(x,y))
 def line(x,y):
-    Display.blit(LineImg,(x,y))
+    Display.blit(line_img,(x,y))
 def pulp(x, y):
-    Display.blit(PulpImg, (x, y))
+    Display.blit(pulp_img, (x, y))
 def Vat(x, y):
-    Display.blit(VatImg, (x, y))
+    Display.blit(vat_img, (x, y))
 def WaterFilter(x, y):
-    Display.blit(WaterFilterImg, (x, y))
+    Display.blit(water_filter_img, (x, y))
 def bleachedpulp(x, y):
-    Display.blit(BleachedPulpImg, (x, y))
+    Display.blit(bleached_pulp_img, (x, y))
 def bleachblock(x,y):
-    Display.blit(BleachBlockImg,(x,y))
+    Display.blit(bleach_block_img,(x,y))
 def Roller1(x,y):
-    Display.blit(Roller1Img,(x,y))
+    Display.blit(roller_img_1,(x,y))
 def Roller2(x,y):
-    Display.blit(Roller2Img,(x,y))
+    Display.blit(roller_img_2,(x,y))
 def FinalPaper(x,y):
-    Display.blit(FinalPaperImg,(x,y))
+    Display.blit(final_paper_img,(x,y))
 def Rotat(number,x,y):
     if number == 1:
-        Display.blit(RotateImg1,(x,y))
+        Display.blit(rotate_img_1,(x,y))
 
     if number == 2:
-        Display.blit(RotateImg2,(x-2,y-4))
+        Display.blit(rotate_img_2,(x-2,y-4))
 
     if number == 3:
-        Display.blit(RotateImg3,(x+4,y-2))
+        Display.blit(rotate_img_3,(x+4,y-2))
 
     if number == 4:
-        Display.blit(RotateImg4,(x-2,y+2))
+        Display.blit(rotate_img_4,(x-2,y+2))
         
 def Deink(number,x,y):
     if number == 1:
-        Display.blit(DeinkImg1,(x,y))
+        Display.blit(deink_img_1,(x,y))
 
     if number == 2:
-        Display.blit(DeinkImg2,(x-2,y-4))
+        Display.blit(deink_img_2,(x-2,y-4))
 
     if number == 3:
-        Display.blit(DeinkImg3,(x-5,y))
+        Display.blit(deink_img_3,(x-5,y))
 
     if number == 4:
-        Display.blit(DeinkImg4,(x-6,y-2))
+        Display.blit(deink_img_4,(x-6,y-2))
         
 def Spray(number,x,y):
     if number == 1:
-        Display.blit(Spray1Img,(x,y))
+        Display.blit(spray_img_1,(x,y))
     if number == 2:
-        Display.blit(Spray2Img,(x,y+1))
+        Display.blit(spray_img_2,(x,y+1))
     if number == 3:
-        Display.blit(Spray3Img,(x-3,y))
+        Display.blit(spray_img_3,(x-3,y))
     if number == 4:
-        Display.blit(Spray4Img,(x-6,y-2))
+        Display.blit(spray_img_4,(x-6,y-2))
     if number == 5:
-        Display.blit(Spray5Img,(x-26,y-2))
+        Display.blit(spray_img_5,(x-26,y-2))
     if number == 6:
-        Display.blit(Spray6Img,(x-6,y-2))
+        Display.blit(spray_img_6,(x-6,y-2))
     if number == 7:
-        Display.blit(Spray7Img,(x-6,y-2))
+        Display.blit(spray_img_7,(x-6,y-2))
     if number == 8:
-        Display.blit(Spray8Img,(x-6,y-2))
+        Display.blit(spray_img_8,(x-6,y-2))
     if number == 9:
-        Display.blit(Spray9Img,(x-6,y-2))
+        Display.blit(spray_img_9,(x-6,y-2))
     if number == 10:
-        Display.blit(Spray10Img,(x-6,y-2))
+        Display.blit(spray_img_10,(x-6,y-2))
     
     
     
@@ -441,7 +441,7 @@ def page():
 
 
             elif x > 50 and x < 550:
-                strands(x,y-10)
+                Strands(x,y-10)
 
             if x > 550:
 
@@ -457,7 +457,7 @@ def page():
             
 
             if x > 50 and x <150:
-                shREDder(50,175)
+                shredder(50,175)
 
 
 
