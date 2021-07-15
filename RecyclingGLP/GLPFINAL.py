@@ -1,16 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-#importing modules
-import pygame
-import time
-import random
 import numpy as np
 import pandas as pd
+import pygame
+import random
 import sys
+import time
+
 pygame.init()
 
 
