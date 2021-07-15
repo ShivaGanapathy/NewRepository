@@ -16,6 +16,17 @@ pygame.display.set_caption('Welcome')
 clock = pygame.time.Clock()
 crashed = False
 
+#making colors
+BLACK = (0, 0, 0)
+GREEN = (0,195,0)
+GREY = (170,170,170)
+LIGHT_BLACK = (150,150,150)
+LIGHT_GREEN =  (0,235,0)
+LIGHT_RED = (255,0,0)
+ORCHID = (218,112,214)
+RED =  (205,0,0)
+TEAL = (0,128,128)
+WHITE = (255, 255, 255)
 
 #global variables
 counter = 1
@@ -35,17 +46,7 @@ clear = False
 random_number = 0
 info  = False
 
-#making colors
-black = (0, 0, 0)
-lightblack = (150,150,150)
-white = (255, 255, 255)
-red =  (205,0,0)
-green = (0,195,0)
-light_green =  (0,235,0)
-light_red = (255,0,0)
-grey = (170,170,170)
-orchid = (218,112,214)
-teal = (0,128,128)
+
 
 
 
@@ -134,11 +135,11 @@ class Pages:
 
 page1 = Pages("page1","The intro page")
 page2 = Pages("page2","This page is a game-like format of the waster sorting step.")
-page3 = Pages("page3","This page demonstrates the paper being shredded, then heated, and finally filtered")
+page3 = Pages("page3","This page demonstrates the paper being shREDded, then heated, and finally filteRED")
 page4 = Pages("page4","The pulp is being cleaned extensively by spinning in a centrifuge.")
 page5 = Pages("page5","The pulp is deinked, and ink, glue, and residue of adhesives are chemically separated")
 page6= Pages("page6","This page shows the processs of paper pulp being rinsed with water")
-page7 = Pages("page7","This page shows bleaching of the pulp, resulting in a white color")
+page7 = Pages("page7","This page shows bleaching of the pulp, resulting in a WHITE color")
 page8 = Pages("page8","This page shows paper pulp being sprayed on metal sheets, serving as a platform for the paper")
 page9 = Pages("page9","This page shows the rolling out of paper, draining excess water and bonding paper pulp together")
 page10 = Pages("page10","The Conclusion Page.")
@@ -165,7 +166,7 @@ def conveyor(x,y):
     Display.blit(ConveyorImg,(x,y))
 def conveyor2(x,y):
     Display.blit(ConveyorImg2,(x,y))
-def shredder(x,y):
+def shREDder(x,y):
     Display.blit(ShreddingImg,(x,y))
 def strands(x,y):
     Display.blit(Strands,(x,y))
@@ -260,7 +261,7 @@ def boundar():
     
 #function that helps with message displaying
 def text_objects(text,font):
-    TextSurface = font.render(text,True,black)
+    TextSurface = font.render(text,True,BLACK)
     return TextSurface, TextSurface.get_rect()
 
     
@@ -286,7 +287,7 @@ def page():
         
         if back() == False:
             
-            Display.fill(white)
+            Display.fill(WHITE)
             back()
             page_list[counter-1].displaytext()
         else:
@@ -308,7 +309,7 @@ def page():
                 countertwo = 1
 
             returned = 0       
-            Display.fill(white)
+            Display.fill(WHITE)
             returned = buttons()
             stem(70,160)
 
@@ -338,7 +339,7 @@ def page():
 
         elif counter == 2: 
             if clear == True:
-                Display.fill(white)
+                Display.fill(WHITE)
                 clear = False
                 random_number = random.randint(0,4)
                 x = 0 
@@ -428,7 +429,7 @@ def page():
             if clear == True:
                 counterone += 1
                 clear = False
-                Display.fill(white)
+                Display.fill(WHITE)
             conveyor2(-150,100)
 
 
@@ -466,7 +467,7 @@ def page():
             
 
             if x > 50 and x <150:
-                shredder(50,175)
+                shREDder(50,175)
 
 
 
@@ -484,13 +485,13 @@ def page():
 
             pygame.display.update()
             if returned ==  1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 if returned == -1:
                     y = 109
                 if returned == 1:
                     counterone =0 
                     countertwo = 1
-                    Display.fill(white)
+                    Display.fill(WHITE)
             counter += returned
 
         elif counter == 4:
@@ -505,7 +506,7 @@ def page():
             Rotat(countertwo,280,160)
 
             if returned == 1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 clear = True
                 x =0 
                 if returned == -1:
@@ -530,7 +531,7 @@ def page():
             Deink(countertwo,280,160)
 
             if returned == 1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 clear = True
                 counterone = 0
                 countertwo = 0 
@@ -543,7 +544,7 @@ def page():
             
         elif counter == 6:
             if clear ==  True:
-                Display.fill(white)
+                Display.fill(WHITE)
                 clear = False
             
             returned = buttons()
@@ -573,7 +574,7 @@ def page():
             pygame.display.update()
             
             if returned == 1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 clear = True
                 counterone = 0
                 if returned == 1:
@@ -588,7 +589,7 @@ def page():
             if clear == True:
                 counterone += 1
                 clear = False
-                Display.fill(white)
+                Display.fill(WHITE)
                 
             conveyor2(-150,100)
 
@@ -631,14 +632,14 @@ def page():
             
             pygame.display.update()
             if returned ==  1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 if returned == -1:
                     y = 175
                     x = 0
                 if returned == 1:
                     counterone =0 
                     countertwo = 1
-                    Display.fill(white)
+                    Display.fill(WHITE)
                     
             counter += returned
             
@@ -658,19 +659,19 @@ def page():
                 countertwo += 1
             if countertwo == 11:
                 countertwo = 1
-            Display.fill(white)
+            Display.fill(WHITE)
             Spray(countertwo,200,150)
             returned = buttons()
             message_display("Step 7: Paper Spraying",400,75,'PlayfairDisplay-Regular.otf',34)
             pygame.display.update()
             if returned ==  1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
                 if returned == -1:
                     y = 109
                 if returned == 1:
                     counterone =0 
                     countertwo = 1
-                    Display.fill(white)
+                    Display.fill(WHITE)
                     
             counter += returned
             
@@ -695,7 +696,7 @@ def page():
                 Roller2(0,200)
             
             if returned == 1 or returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
             counter += returned
             
         elif counter == 10:
@@ -707,7 +708,7 @@ def page():
             if returned == 1:
                 returned = 0
             if returned == -1:
-                Display.fill(white)
+                Display.fill(WHITE)
             counter += returned
 
             
@@ -730,46 +731,46 @@ def buttons():
     # The Red Back Button
     if  150 + 100 > mouse[0] > 150 and 450 + 50  > mouse[1] > 450:
         
-        pygame.draw.rect(Display,light_red,(150,450,100,50))
+        pygame.draw.rect(Display,LIGHT_RED,(150,450,100,50))
         if click[0] == 1:
             time.sleep(.5)
             
-            pygame.draw.rect(Display,red,(150,450,100,50))
+            pygame.draw.rect(Display,RED,(150,450,100,50))
             temp =   -1
             
     else:
-        pygame.draw.rect(Display,red,(150,450,100,50))
+        pygame.draw.rect(Display,RED,(150,450,100,50))
         
         
-    #The green Next button
+    #The GREEN Next button
     
     if 550 + 100 > mouse[0] > 550 and 450 + 50  > mouse[1] > 450:
-        pygame.draw.rect(Display,light_green,(550,450,100,50))
+        pygame.draw.rect(Display,LIGHT_GREEN,(550,450,100,50))
         
         if click[0] == 1:
             time.sleep(.5)
-            pygame.draw.rect(Display,green,(550,450,100,50))
+            pygame.draw.rect(Display,GREEN,(550,450,100,50))
             
             temp =  1
             
             
     else:
-        pygame.draw.rect(Display,green,(550,450,100,50))
+        pygame.draw.rect(Display,GREEN,(550,450,100,50))
         
     #The Grey Info button
         
     if  350 + 100 > mouse[0] > 350 and 450 + 50  > mouse[1] > 450:
         
-        pygame.draw.rect(Display,grey,(350,450,100,50))
+        pygame.draw.rect(Display,GREY,(350,450,100,50))
         if click[0] == 1:
             time.sleep(.5)
             
-            pygame.draw.rect(Display,lightblack,(350,450,100,50))
+            pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
             
             info = True
             
     else:
-        pygame.draw.rect(Display,lightblack,(350,450,100,50))
+        pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
     
     smallText = pygame.font.Font("PAPYRUS.ttf",20)
     textSurf, textRect = text_objects("Back",smallText)
@@ -798,21 +799,21 @@ def back():
     click = pygame.mouse.get_pressed()
     if  350 + 100 > mouse[0] > 350 and 450 + 50  > mouse[1] > 450:
         
-        pygame.draw.rect(Display,grey,(350,450,100,50))
+        pygame.draw.rect(Display,GREY,(350,450,100,50))
         if click[0] == 1:
             time.sleep(.5)
-            Display.fill(white)
+            Display.fill(WHITE)
             info = False
-            Display.fill(white)
-            pygame.draw.rect(Display,lightblack,(350,450,100,50))
+            Display.fill(WHITE)
+            pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
             clear = True
-            Display.fill(white)
+            Display.fill(WHITE)
             temp = True
             
     
             
     else:
-        pygame.draw.rect(Display,lightblack,(350,450,100,50))
+        pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
 
     smallText = pygame.font.Font("PAPYRUS.ttf",10)
     textSurf, textRect = text_objects("Back To Simulation",smallText)
