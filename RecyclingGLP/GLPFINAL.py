@@ -9,9 +9,9 @@ pygame.init()
 
 
 #setting up form
-display_width = 800
-display_height = 600
-Display = pygame.display.set_mode((display_width, display_height))
+DISPLAY_WIDTH = 800
+DISPLAY_HEIGHT = 600
+Display = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT))
 pygame.display.set_caption('Welcome')
 clock = pygame.time.Clock()
 crashed = False
@@ -19,8 +19,8 @@ crashed = False
 
 #global variables
 counter = 1
-x = (display_width * 0.45)
-y = (display_height * 0.8)
+x = (DISPLAY_WIDTH * 0.45)
+y = (DISPLAY_HEIGHT * 0.8)
 x1 = 0
 x2 = 0
 y1 = 0
