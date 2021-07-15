@@ -121,7 +121,7 @@ class Pages:
         
         
     def displaytext(self):
-        message_display(self.description,400,75,'TIMESBD.ttf',20)
+        message_display(self.description,400,75,'assets/font/TIMESBD.ttf',20)
 
 page1 = Pages("page1","The intro page")
 page2 = Pages("page2","This page is a game-like format of the waster sorting step.")
@@ -247,7 +247,7 @@ def message_display(text,x,y,font,size):
 
 #function that alerts during when object exceeds boubdaries
 def boundar():
-    message_display('You Crashed',400,400,'PAPYRUS.ttf',115)
+    message_display('You Crashed',400,400,'assets/font/PAPYRUS.ttf',115)
     
 #function that helps with message displaying
 def text_objects(text,font):
@@ -309,7 +309,7 @@ def page():
             if countertwo == 2:
                 arrow2(-100,-25)
 
-            message_display("Welcome to the Recycling Stream of Mixed Paper!",400,75,'TIMESBD.ttf',37)
+            message_display("Welcome to the Recycling Stream of Mixed Paper!",400,75,'assets/font/TIMESBD.ttf',37)
 
 
             pygame.display.update()
@@ -360,7 +360,7 @@ def page():
                         clear = True
                         score += 1
                     else:
-                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "PlayfairDisplay-Black.otf",15)
+                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "assets/font/PlayfairDisplay-Black.otf",15)
                         time.sleep(5)
                         clear = True
                         gameloop()
@@ -372,7 +372,7 @@ def page():
                         clear = True
                         score += 1
                     else:
-                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "PlayfairDisplay-Black.otf",15)
+                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "assets/font/PlayfairDisplay-Black.otf",15)
                         time.sleep(5)
                         clear = True
                         gameloop()
@@ -384,7 +384,7 @@ def page():
                         clear = True
                         score += 1
                     else:
-                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "PlayfairDisplay-Black.otf",15)
+                        message_display("Sorry, incorrect. The correct classification is " + object_list[random_number].classification+ ". " + "restarting in 5 seconds",400,550, "assets/font/PlayfairDisplay-Black.otf",15)
                         time.sleep(5)
                         clear = True
                         gameloop()
@@ -394,10 +394,10 @@ def page():
 
             conveyor(-50,100)
             object_list[random_number].display(x,y)
-            message_display("Conveyor Game",400,75,'PlayfairDisplay-Regular.otf',37)
-            message_display("Current Object: " + object_list[random_number].name,660,175,'PlayfairDisplay-Regular.otf',19)
+            message_display("Conveyor Game",400,75,'assets/font/PlayfairDisplay-Regular.otf',37)
+            message_display("Current Object: " + object_list[random_number].name,660,175,'assets/font/PlayfairDisplay-Regular.otf',19)
             pygame.display.update()
-            message_display("Score: " + str(score),600,275,'PlayfairDisplay-Regular.otf',27)
+            message_display("Score: " + str(score),600,275,'assets/font/PlayfairDisplay-Regular.otf',27)
 
 
 
@@ -452,7 +452,7 @@ def page():
 
             if x>350 and x<600:
                 flames(350,295)
-                message_display("Heating",450,400,"PlayfairDisplay-Regular.otf",25)
+                message_display("Heating",450,400,"assets/font/PlayfairDisplay-Regular.otf",25)
 
             
 
@@ -466,7 +466,7 @@ def page():
                 x = 0
 
 
-            message_display("Step 2: Paper Shredding, Heating & Filtering",400,75,'PlayfairDisplay-Regular.otf',34)
+            message_display("Step 2: Paper Shredding, Heating & Filtering",400,75,'assets/font/PlayfairDisplay-Regular.otf',34)
 
 
 
@@ -486,7 +486,7 @@ def page():
 
         elif counter == 4:
             returned = buttons()
-            message_display("Step 3: Centrifuging",400,75,'PlayfairDisplay-Regular.otf',37)
+            message_display("Step 3: Centrifuging",400,75,'assets/font/PlayfairDisplay-Regular.otf',37)
             counterone += 1
             if counterone == 5:
                 counterone = 0
@@ -510,7 +510,7 @@ def page():
             
         elif counter == 5:
             returned = buttons()
-            message_display("Step 4: Deinking",400,75,'PlayfairDisplay-Regular.otf',37)
+            message_display("Step 4: Deinking",400,75,'assets/font/PlayfairDisplay-Regular.otf',37)
             counterone += 1
             
             if counterone == 5:
@@ -538,7 +538,7 @@ def page():
                 clear = False
             
             returned = buttons()
-            message_display("Step 5: Water Rinsing",400,75,'PlayfairDisplay-Regular.otf',37)
+            message_display("Step 5: Water Rinsing",400,75,'assets/font/PlayfairDisplay-Regular.otf',37)
             line(0,150)
             pulp(x,y)
             Vat(650,270)
@@ -615,7 +615,7 @@ def page():
                 
 
 
-            message_display("Step 6: Paper Bleaching & Whitening",400,75,'PlayfairDisplay-Regular.otf',34)
+            message_display("Step 6: Paper Bleaching & Whitening",400,75,'assets/font/PlayfairDisplay-Regular.otf',34)
 
 
 
@@ -652,7 +652,7 @@ def page():
             Display.fill(WHITE)
             Spray(countertwo,200,150)
             returned = buttons()
-            message_display("Step 7: Paper Spraying",400,75,'PlayfairDisplay-Regular.otf',34)
+            message_display("Step 7: Paper Spraying",400,75,'assets/font/PlayfairDisplay-Regular.otf',34)
             pygame.display.update()
             if returned ==  1 or returned == -1:
                 Display.fill(WHITE)
@@ -667,7 +667,7 @@ def page():
             
         elif counter == 9: 
             
-            message_display("Step 8: Paper Rolling",400,75,'PlayfairDisplay-Regular.otf',34)
+            message_display("Step 8: Paper Rolling",400,75,'assets/font/PlayfairDisplay-Regular.otf',34)
             returned = buttons()
             
             counterone += 1
@@ -691,7 +691,7 @@ def page():
             
         elif counter == 10:
             
-            message_display("All Done!",400,75,'PlayfairDisplay-Regular.otf',34)
+            message_display("All Done!",400,75,'assets/font/PlayfairDisplay-Regular.otf',34)
             FinalPaper(200,200)
             returned = buttons()
             pygame.display.update()
@@ -762,17 +762,17 @@ def buttons():
     else:
         pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
     
-    smallText = pygame.font.Font("PAPYRUS.ttf",20)
+    smallText = pygame.font.Font("assets/font/PAPYRUS.ttf",20)
     textSurf, textRect = text_objects("Back",smallText)
     textRect.center= ((150+(100/2)),(450+(50/2)))
     Display.blit(textSurf,textRect)
     
-    smallText = pygame.font.Font("PAPYRUS.ttf",20)
+    smallText = pygame.font.Font("assets/font/PAPYRUS.ttf",20)
     textSurf, textRect = text_objects("Next",smallText)
     textRect.center= ((550+(100/2)),(450+(50/2)))
     Display.blit(textSurf,textRect)
     
-    smallText = pygame.font.Font("PAPYRUS.ttf",20)
+    smallText = pygame.font.Font("assets/font/PAPYRUS.ttf",20)
     textSurf, textRect = text_objects("Info",smallText)
     textRect.center= ((350+(100/2)),(450+(50/2)))
     Display.blit(textSurf,textRect)
@@ -805,7 +805,7 @@ def back():
     else:
         pygame.draw.rect(Display,LIGHT_BLACK,(350,450,100,50))
 
-    smallText = pygame.font.Font("PAPYRUS.ttf",10)
+    smallText = pygame.font.Font("assets/font/PAPYRUS.ttf",10)
     textSurf, textRect = text_objects("Back To Simulation",smallText)
     textRect.center= ((350+(100/2)),(450+(50/2)))
     Display.blit(textSurf,textRect)
