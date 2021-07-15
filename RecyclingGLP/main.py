@@ -7,7 +7,6 @@ import time
 
 pygame.init()
 
-
 #setting up form
 DISPLAY_WIDTH = 800
 DISPLAY_HEIGHT = 600
@@ -46,10 +45,6 @@ clear = False
 random_number = 0
 info  = False
 
-
-
-
-
 #loading images
 PaperImg = pygame.image.load('mixed_paper.gif')
 StemImg = pygame.image.load('stem.png')
@@ -68,20 +63,16 @@ RotateImg1 = pygame.image.load("Rotat1.PNG")
 RotateImg2 = pygame.image.load("Rotat2.PNG")
 RotateImg3 = pygame.image.load("Rotat3.PNG")
 RotateImg4 = pygame.image.load("Rotat4.PNG")
-
 DeinkImg1 = pygame.image.load("Deink1.PNG")
 DeinkImg2 = pygame.image.load("Deink2.PNG")
 DeinkImg3 = pygame.image.load("Deink3.PNG")
 DeinkImg4 = pygame.image.load("Deink4.PNG")
-
 LineImg = pygame.image.load("line.PNG")
 PulpImg= pygame.image.load("pulp.PNG")
 VatImg = pygame.image.load("Vat.PNG")
 WaterFilterImg = pygame.image.load("waterfilter.PNG")
-
 BleachedPulpImg = pygame.image.load("bleachedpulp.PNG")
 BleachBlockImg = pygame.image.load("bleachblock.PNG")
-
 Spray1Img= pygame.image.load("Spray1.PNG")
 Spray2Img= pygame.image.load("Spray2.PNG")
 Spray3Img= pygame.image.load("Spray3PNG.PNG")
@@ -92,7 +83,6 @@ Spray7Img= pygame.image.load("Spray7.PNG")
 Spray8Img= pygame.image.load("Spray8.PNG")
 Spray9Img= pygame.image.load("Spray9.PNG")
 Spray10Img = pygame.image.load("Spray10.PNG")
-
 Roller1Img = pygame.image.load("Roller1.PNG")
 Roller2Img = pygame.image.load("Roller2.PNG")
 FinalPaperImg = pygame.image.load("FinalPaper.jpg")
