@@ -4,7 +4,7 @@ I developed this animation for a school project in order to visually represent t
 
 #Repository Contents
 
-This repository contains only one python file where all the code is executed: GLPFINAL.py 
+This repository contains only one python file where all the code is executed: main.py 
 
 In the future, this repository will be refactored and reorganized.
 
